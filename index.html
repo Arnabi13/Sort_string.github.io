@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sort String</title>
+    </head>
+    <body  style="background-color:rgb(218, 191, 191);">
+        <center>
+            <br><br><br><br>
+            <h2>INPUT A STRING AND SORT ITS CHARACTERS ALPHABETICALLY</h2>
+            <hr width="60%">
+            <h2>Enter a String:</h2><input name="string" type="text" size=20 id='str1'/>
+            <br><br>
+            <center><button onclick="rev()">Sort Characters</button>
+                <script>
+                    function rev(){
+                        var inputVal = document.getElementById("str1").value;
+                        let str2;
+                        str2=inputVal.split("").sort().join("");
+                        alert("THE NEW STRING IS:  "+str2);
+                    }
+                </script>
+        </center>
+    </body>
+</html>
